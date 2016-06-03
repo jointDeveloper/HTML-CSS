@@ -18,9 +18,122 @@ header{
 }
 header h1{
   text-align: center;
-  color: white;
-  font-size: 5em;
+  color: #f06292;
+  font-size: 7em;
   position: relative;
-  top:40%;
+  top:5%;
+}
+section {
+  margin: 0em auto 0em auto;
+  padding: 2em;
+}
+#seccion1{
+  background-color: #FF5A75;
+  padding-bottom: 5em;
+}
 
+#seccion1 h2{
+  text-align:center;
+  color: white;
+  font-family: 'Pacifico',cursive;
+  font-size: 3em;
+}
+
+section ul{
+  margin: 2em auto 1em auto;
+  padding: 0;
+  text-align: center;
+}
+
+section ul li{
+  margin: 2em;
+  padding: 0;
+  display: inline-block;
+  list-style: none;
+}
+
+section ul li a{
+  text-decoration: none;
+  display: block;
+  color:white ;
+  background: #8F2E3E;
+  padding: 2em;
+}
+
+#seccion2{
+  background-color: black;
+  padding-bottom: 5em;
+  padi
+}
+
+#seccion2 h2{
+  text-align:center;
+  color: white;
+  font-family: 'Pacifico',cursive;
+  font-size: 3em;
+}
+
+img{
+  display: block;
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+}
+section figure{
+  display: inline-block;
+}
+
+footer{
+  background-color: #FF5A75;
+  overflow: hidden;
+  padding: 2em;
+  text-align: center;
+
+}
+
+footer h2{
+  font-family: 'Pacifico',cursive;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
+}
+
+footer p{
+  color: white;
+  text-align:center;
+}
+
+form{
+  display: block;
+  with:100;
+  margin: 1em;
+  padding: 0;
+}
+
+form input,textarea{
+  display: block;
+  width: 95%;
+  margin: 1em;
+  padding: 1em;
+}
+form input: focus, textarea:focus{
+  border: 2px solid #511923;
+
+
+}
+
+footer button{
+  /*display: block;*/
+  width: 95%;
+  margin: 1em;
+  padding: 1em;
+  outline: none;
+  background: #FF5A75;
+  color: white;
+}
+
+footer button: hover{
+  background: #FF8E9E;
+  color: white;
 }
