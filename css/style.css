@@ -31,6 +31,20 @@ section {
   background-color: #FF5A75;
   padding-bottom: 5em;
 }
+#seccion1 button{
+  outline: none;
+  padding: 1em 3em;
+  background: #FF5A75;
+  color: white;
+  border: 2px solid #FFF;
+
+}
+
+
+#seccion1 button:hover{
+  background: #FF8E9E;
+  color: white;
+}
 
 #seccion1 h2{
   text-align:center;
@@ -57,13 +71,12 @@ section ul li a{
   display: block;
   color:white ;
   background: #8F2E3E;
-  padding: 2em;
+  padding: 0.5em;
 }
 
 #seccion2{
   background-color: black;
   padding-bottom: 5em;
-  padi
 }
 
 #seccion2 h2{
@@ -131,9 +144,11 @@ footer button{
   outline: none;
   background: #FF5A75;
   color: white;
+  border: 2px solid #FFF;
 }
 
-footer button: hover{
+
+footer button:hover{
   background: #FF8E9E;
   color: white;
 }
