@@ -1,0 +1,26 @@
+body {
+  background: white;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+header{
+  background-image: url("../img/working.jpg");
+  font-family: 'Pacifico',cursive;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 40em;
+
+}
+header h1{
+  text-align: center;
+  color: white;
+  font-size: 5em;
+  position: relative;
+  top:40%;
+
+}
