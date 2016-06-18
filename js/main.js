@@ -20,10 +20,12 @@ nextButton.textContent = "Siguiente >";
 frasesElement.parentElement.appendChild(nextButton);
 
 // Mostramos la primer frase
-frasesElement.textContent = misFrases[fraseIndex];
+cambiarFrase();
 
 // Agregamos escuchador del click del botón para mostrar otra frase
-nextButton.addEventListener('click', function () {
+nextButton.addEventListener('click', cambiarFrase)
+
+function cambiarFrase () {
   if (fraseIndex < (misFrases.length - 1)) {
     fraseIndex += 1;
   } else {
@@ -31,4 +33,4 @@ nextButton.addEventListener('click', function () {
   }
 
   frasesElement.textContent = misFrases[fraseIndex];
-})
+}
