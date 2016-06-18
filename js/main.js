@@ -12,15 +12,23 @@ var misFrases = [
   "Behind the phony tinsel of Hollywood lies the real tinsel. – Oscar Levant"
 ];
 var frasesElement = document.getElementById('frases-app');
+var fraseIndex = 0;
 
-// Insertamos un nueva elemento de lista
-var lista = document.createElement('UL');
-frasesElement.appendChild(lista);
+// Insertamos un botón luego de las frases
+var nextButton = document.createElement('BUTTON');
+nextButton.textContent = "Siguiente >";
+frasesElement.parentElement.appendChild(nextButton);
 
-// Recorremos todas las frases para mostrarlas como una lista
-var i = 0;
-for (i; i < misFrases.length; i++) {
-  var item = document.createElement('LI');
-  item.textContent = misFrases[i];
-  lista.appendChild(item);
-}
+// Mostramos la primer frase
+frasesElement.textContent = misFrases[fraseIndex];
+
+// Agregamos escuchador del click del botón para mostrar otra frase
+nextButton.addEventListener('click', function () {
+  if (fraseIndex < (misFrases.length - 1)) {
+    fraseIndex += 1;
+  } else {
+    fraseIndex = 0;
+  }
+
+  frasesElement.textContent = misFrases[fraseIndex];
+})
